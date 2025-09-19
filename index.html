@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Helmet - Jarvis Edition</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #0a0f1c;
+            color: #f1f1f1;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111827;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            color: #00d4ff;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #f1f1f1;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: #00d4ff;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1f2937;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #00d4ff;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* tambahan */
+            gap: 20px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+            text-align: center;
+            /* tambahan agar caption ikut rata tengah */
+        }
+
+        .image-row img {
+            width: 300px;
+            /* biar seragam dan mudah ditengahkan */
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            /* bikin gambarnya tepat di tengah */
+        }
+
+
+        .caption {
+            text-align: center;
+            font-style: italic;
+            color: #ccc;
+            margin-top: 5px;
+        }
+
+        #cara-kerja ol,
+        #manfaat ul {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Smart Helmet - Jarvis Edition</h1>
+        <nav>
+            <a href="#fitur">Fitur</a>
+            <a href="#cara-kerja">Cara Kerja</a>
+            <a href="#manfaat">Manfaat</a>
+            <a href="#model">Model</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="fitur">
+            <h2>🔧 Fitur Helm Pintar</h2>
+            <div class="features">
+                <div class="card">
+                    <h3>HUD Display</h3>
+                    <p>Navigasi, kecepatan, dan data kendaraan langsung tampil di kaca helm.</p>
+                </div>
+                <div class="card">
+                    <h3>Kamera 360°</h3>
+                    <p>Memberikan pandangan menyeluruh, mengurangi blind spot.</p>
+                </div>
+                <div class="card">
+                    <h3>AI Assistant</h3>
+                    <p>Interaksi dengan suara untuk navigasi, informasi, dan hiburan.</p>
+                </div>
+                <div class="card">
+                    <h3>Sistem Darurat</h3>
+                    <p>Mengirim lokasi otomatis jika terjadi kecelakaan.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cara-kerja">
+            <h2>⚙ Cara Kerja</h2>
+            <ol>
+                <li><b>Pemindaian Lingkungan:</b> Sensor 3D dan kamera mendeteksi kondisi sekitar pengendara.</li>
+                <li><b>Proyeksi HUD (Head-Up Display):</b> Informasi seperti kecepatan, peta GPS, notifikasi, dan
+                    indikator bahan bakar tampil di visor helm.</li>
+                <li><b>Interaksi Cerdas:</b> Pengendara dapat mengontrol helm dengan suara, sentuhan di sisi helm, atau
+                    gesture tangan.</li>
+                <li><b>Kamera 360°:</b> Menampilkan kondisi depan, samping, dan belakang, membantu mengurangi blind
+                    spot.</li>
+                <li><b>AI Assistant:</b> Memberikan informasi real-time, seperti kondisi lalu lintas, cuaca, atau
+                    memutar musik.</li>
+                <li><b>Konektivitas IoT:</b> Helm terhubung ke smartphone dan cloud untuk sinkronisasi data dan update
+                    sistem.</li>
+                <li><b>Sistem Darurat:</b> Jika terjadi benturan keras, helm otomatis mengirimkan lokasi GPS ke kontak
+                    darurat.</li>
+            </ol>
+        </section>
+
+        <section id="manfaat">
+            <h2>🛡️ Manfaat</h2>
+            <ul>
+                <li>Meningkatkan keselamatan dengan sensor & kamera.</li>
+                <li>Pengendara fokus tanpa harus melihat smartphone.</li>
+                <li>Asisten pribadi membantu navigasi & komunikasi.</li>
+                <li>Pengalaman berkendara lebih futuristik & praktis.</li>
+            </ul>
+        </section>
+
+
+        <section id="model">
+            <h2>🖼 Model Helm</h2>
+            <div class="image-row">
+                <div>
+                    <img src="image/jarvis.jpeg" alt="Referensi Smart Helmet">
+                    <p class="caption">Referensi Smart Helmet</p>
+                </div>
+                <div>
+                    <img src="image/helm.png" alt="Prototype Helm Futuristik">
+                    <p class="caption">Prototype helm dengan HUD seperti Jarvis</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
